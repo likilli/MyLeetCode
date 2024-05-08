@@ -7,11 +7,11 @@
 template <typename DataType>
 struct ListNodes
 {
-    DataType val;
-    ListNodes *next;
-
     explicit ListNodes(const DataType& value);
     ListNodes(const DataType& value, ListNodes* next);
+
+    DataType val;
+    ListNodes *next;
 };
 
 template <typename DataType>
