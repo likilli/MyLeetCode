@@ -72,7 +72,7 @@ DoubleLinkedList* LRUCache::RemoveTail()
   return node;
 }
 
-void RemoveNode(DoubleLinkedList *node)
+void LRUCache::RemoveNode(DoubleLinkedList *node)
 {
   node->prev_->next_ = node->next_;
   node->next_->prev_ = node->prev_;
